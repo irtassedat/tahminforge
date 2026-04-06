@@ -27,6 +27,28 @@ importers:
         specifier: ^5.7.0
         version: 5.9.3
 
+  packages/collector:
+    dependencies:
+      '@tahminforge/agents':
+        specifier: workspace:*
+        version: link:../agents
+      '@tahminforge/shared':
+        specifier: workspace:*
+        version: link:../shared
+      nanoid:
+        specifier: ^5.0.9
+        version: 5.1.7
+      pino:
+        specifier: ^9.5.0
+        version: 9.14.0
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.0
+        version: 22.19.17
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+
   packages/prediction:
     dependencies:
       '@anthropic-ai/sdk':
