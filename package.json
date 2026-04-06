@@ -1,0 +1,16 @@
+{
+  "name": "tahminforge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Match Prediction Platform — Autonomous agents for sports prediction, content generation, and accuracy tracking",
+  "scripts": {
+    "build": "pnpm -r --filter @tahminforge/shared build && pnpm -r --filter !@tahminforge/shared build",
+    "dev": "pnpm -r --parallel dev",
+    "lint": "eslint .",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "demo": "docker compose up -d && pnpm dev"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": { "node": ">=20.0.0" }
+}
