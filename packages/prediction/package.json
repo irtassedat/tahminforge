@@ -1,0 +1,23 @@
+{
+  "name": "@tahminforge/prediction",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "demo": "node --env-file=.env dist/demo.js"
+  },
+  "dependencies": {
+    "@tahminforge/shared": "workspace:*",
+    "@tahminforge/agents": "workspace:*",
+    "@anthropic-ai/sdk": "^0.68.0",
+    "nanoid": "^5.0.9",
+    "pino": "^9.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
